@@ -18,8 +18,7 @@
     <!-- slick.js -->
     <link rel="stylesheet" type="text/css" href="assets/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <script src="js/modernizr.custom.js"></script>
+
 
   </head>
   <body>
@@ -30,13 +29,13 @@
 			</div>
 		 	<ul class="nav justify-content-center py-4">
 				<li class="nav-item">
-					<a class="nav-link" href="#">soft</a>
+					<a class="nav-link" href="#soft">soft</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">medium</a>
+					<a class="nav-link" href="#medium">medium</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">about</a>
+					<a class="nav-link" href="#about">about</a>
 				</li>
         <li class="nav-item xs-visible">
           <a href="#" class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -47,13 +46,13 @@
       <div class="container rel">
 		 	<ul class="nav justify-content-center py-4">
 				<li class="nav-item">
-					<a class="nav-link" href="#" data-hover="SOFT">soft</a>
+					<a class="nav-link" href="#soft" data-hover="SOFT">soft</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" data-hover="MEDIUM">medium</a>
+					<a class="nav-link" href="#medium" data-hover="MEDIUM">medium</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" data-hover="ABOUT">about</a>
+					<a class="nav-link" href="#about" data-hover="ABOUT">about</a>
 				</li>
 				<li class="nav-cart">
 					<a class="cart" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> cart (0)</a>
@@ -104,13 +103,10 @@
         </div>
       </div>
     </div>
-    <div class="norm">
-      <div class="ar">
-        <div class="one"></div>
-        <div class="two"></div>
-      </div>
+    <div class="cont">
+      <div class="palka"></div>
     </div>
-    <div class="lightgray">
+    <div class="lightgray" id="soft">
       <div class="container showcase">
         <div class="dimma">
           <div class="dim">
@@ -162,7 +158,7 @@
             </div>
           </div>
         </div>
-        <h1>MEDIUM</h1>
+        <h1 id="medium">MEDIUM</h1>
         <div class="row">
           <div class="col-md-3 col-xs-12">
             <div class="card mt">
@@ -209,7 +205,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="page-footer">
+    <footer class="page-footer" id="about">
 
       <div class="soc">
         <a href="#!"><img class="ic" src="assets/vk.svg" alt=""></a>
@@ -224,79 +220,16 @@
 
 
     </footer>
-    <!-- footer -->
 
     <!-- JQuery -->
-    <script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js" integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4=" crossorigin="anonymous"></script>
-		<script src="assets/jquery.waypoints.min.js"></script>
+    <!-- waypoints -->
+    <script src="assets/jquery.waypoints.min.js"></script>
+    <!-- slick.js -->
     <script type="text/javascript" src="assets/slick.min.js"></script>
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.card-cont').slick({
-          arrows: true,
-          centerPadding: '0px',
-          autoplay: true,
-          centerMode: true,
-          autoplaySpeed: 3000,
-          infinite: true,
-          dots: true,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-              }
-            },
-            {
-              breakpoint: 780,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false
-              }
-            }
-          ]
-        });
-      });
-    </script>
-    <script>
-      var waypoints = $('.main').waypoint(function(direction) {
-        if(direction === 'down') {
-          $('.down').css('opacity', '0.9');
-        }
-        else if( direction === 'up') {
-          $('.down').css('opacity', '0');
-        }
-      })
-    </script>
-    <script>
-    /*
-    $('.dimma').click(function() {
-      $('.smoke').animate({
-        opacity: 1,
-        top: "-250px",
-        height: "200px"
-      }, 2000, "linear", function() {
-        $('.smoke').animate({
-          opacity: 0
-        }, 100, function() {
-          $('.smoke').css({
-            "top": "-100px",
-            "height": "100px"
-          });
-        });
-      });
-    });*/
-    </script>
-		<script src="js/waypoints.min.js"></script>
+    <!-- js -->
+    <script type="text/javascript" src="assets/main.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->

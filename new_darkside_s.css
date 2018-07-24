@@ -271,7 +271,11 @@ h2 {
 }
 
 h1 {
-  padding-bottom: 30px;
+  padding-bottom: 0px;
+}
+
+.ab {
+  padding-top: 30px !important;
 }
 
 .container {
@@ -375,6 +379,21 @@ h1 {
   transform: skewY(-16deg);
 }
 
+.txt {
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+}
+
+.underlogo {
+  font-size: 121.5%;
+  margin-top: 30px !important;
+  margin-bottom: -50px !important;
+  color: white !important;
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+}
+
 @media (max-width: 768px) {
   .xs-visible {
     display: inline;
@@ -402,5 +421,14 @@ h1 {
   }
   .dimma {
     display: none;
+  }
+  .underlogo {
+    font-size: 121.5%;
+    margin-top: 30px !important;
+    margin-bottom: -50px !important;
+    color: white !important;
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
   }
 }

@@ -440,7 +440,7 @@ h5 {
 
 /* ₽ */
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .dimma {
     display: none;
   }
@@ -465,8 +465,6 @@ h5 {
   .lightgray {
     padding: 20px;
   }
-
-  }
   .down {
     visibility: hidden;
   }
@@ -479,5 +477,4 @@ h5 {
     margin: 0 auto;
     width: 300px;
   }
-
 }

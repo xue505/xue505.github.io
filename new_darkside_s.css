@@ -336,6 +336,10 @@ h5 {
   font-family: "Futura PT", sans-serif;
 }
 
+.desc {
+  text-align: center;
+}
+
 .smoke {
   position: absolute;
   height: 100px;
@@ -473,6 +477,10 @@ h5 {
 
 /* cart.html */
 
+.fa-chevron-left {
+  font-size: 80% !important;
+}
+
 .c-main {
   height: 100vh;
   background-color: #212121;
@@ -481,9 +489,13 @@ h5 {
 
 .c-main .container {
   margin: 0 auto !important;
+  opacity: 0;
 }
 
 .pos {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
   padding-top: 100px;
 }
 
@@ -491,20 +503,99 @@ h5 {
   color: white;
 }
 
+.number {
+  margin: 0 10px;
+}
+
 .ro {
   border-radius: 100% !important;
-  height: 50px !important;
-  width: 50px !important;
+  height: 40px !important;
+  width: 40px !important;
   padding: 0 !important;
+  background-color: #373737;
+  box-shadow: none !important;
+  transition: .2s !important;
+  margin: 0 !important;
+}
+
+.ro:hover {
+  color: black !important;
+}
+
+.btn-group,
+.price,
+.flex h4 {
+  margin: auto 0 !important;
+}
+
+.flex {
+  display: flex;
 }
 
 .dep {
+  display: flex;
   margin-top: 50px;
+  height: 200px;
+  width: 100%;
+}
+
+.dep p {
+  color: lightgray;
+}
+
+.price, .dep h2 {
+  color: white;
 }
 
 .c-main img {
+  border-radius: 3px;
+  border: 2px solid #373737;
   height: 200px;
   width: auto;
+}
+
+.trash {
+  transition: .2s;
+  color: black;
+}
+.trash:hover {
+  color: gray;
+}
+
+.heading {
+  padding-top: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
+}
+
+hr {
+  margin-top: 5% !important;
+  border: 1px solid #373737 !important;
+  width: 74.5%;
+  margin-right: 0;
+}
+
+.somediv {
+  margin: auto;
+}
+
+.total-div h2 {
+  color: white;
+  text-align: right;
+}
+
+.total {
+  margin-left: 0px;
+}
+
+.total-div {
+  margin-top: 30px;
+}
+
+.itog {
+  text-transform: uppercase;
+  text-align: right;
 }
 
 /* ₽ */

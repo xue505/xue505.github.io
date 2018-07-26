@@ -52,14 +52,33 @@ $(document).ready(function(){
 
 //fade
 $(function(){
+  $('.cart').fadeTo('slow', 1, 'swing');
   $('.underlogo').fadeTo('slow', 0.95, 'swing');
   $('.logo').fadeTo('fast', 1, 'swing');
   $('.nav-link').fadeTo('slow', 1, 'swing');
   $('.card').fadeTo('slow', 1, 'swing');
   $('.but').fadeTo('slow', 1, 'swing');
+  $('.heading').fadeTo('slow', 1, 'swing');
+  $('.container').fadeTo('slow', 1, 'swing');
   $('.darker h2').fadeTo('slow', 1, 'swing');
   $('.slick-arrow').fadeTo(1500, 1, 'swing');
-  $('img').lazyload({
-    effect: 'show'
-  });
 });
+
+//calc
+/*
+$(document).ready(function() {
+    var i = $(".number").html();
+    $(".plus").click(function(){
+      i++;
+      $(".number").text(i);
+    });
+
+    $(".minus").click(function() {
+      if (i <= 1) {
+        pass;
+      } else {
+     		i--;
+        $(".number").text(i);
+      }
+    });
+});*/

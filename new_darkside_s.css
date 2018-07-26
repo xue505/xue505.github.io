@@ -135,14 +135,6 @@ a {
 	max-width: 100%;
 }
 
-
-h2 {
-  text-transform: uppercase;
-  margin: 50px 0 !important;
-  position: relative;
-  color: #F5F5F5 !important;
-}
-
 .line {
   height: 6px;
   width: 100%;
@@ -199,7 +191,7 @@ h2 {
 
 .main {
   background-color: #4d4d4d !important;
-  height: 100vh;
+  height: auto;
   z-index: 2 !important;
 }
 /*
@@ -258,7 +250,7 @@ h2 {
 }
 
 .cards {
-  padding: 80px 0;
+  padding: 50px 0;
   background-color: #4d4d4d;
 }
 .xuy {
@@ -429,14 +421,30 @@ h5 {
 .xduy {
   background-color: #373737;
 }
-/*
+
 .darker {
   background-color: #373737;
   height: 100px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-*/
+.darker h2 {
+  text-transform: uppercase;
+  color: #F5F5F5 !important;
+}
+
+
+
+/* ₽ */
+
+@media (max-width: 1200px) {
+  .dimma {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
   .xs-visible {
@@ -449,7 +457,7 @@ h5 {
     margin: 0 0 !important;
   }
   h2 {
-    font-size: 170% !important;
+    font-size: 160% !important;
   }
   .dd {
     margin: 0 !important;
@@ -457,14 +465,10 @@ h5 {
   .lightgray {
     padding: 20px;
   }
-  .cards {
-    padding: 0;
+
   }
   .down {
     visibility: hidden;
-  }
-  .dimma {
-    display: none;
   }
   .underlogo {
     font-size: 121.5%;
@@ -475,4 +479,5 @@ h5 {
     margin: 0 auto;
     width: 300px;
   }
+
 }

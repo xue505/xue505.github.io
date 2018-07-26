@@ -482,7 +482,7 @@ h5 {
 }
 
 .c-main {
-  height: 100vh;
+  height: 100%;
   background-color: #212121;
   width: 100%;
 }
@@ -525,7 +525,7 @@ h5 {
 .btn-group,
 .price,
 .flex h4 {
-  margin: auto 0 !important;
+  margin: auto !important;
 }
 
 .flex {
@@ -533,9 +533,8 @@ h5 {
 }
 
 .dep {
-  display: flex;
   margin-top: 50px;
-  height: 200px;
+  height: auto;
   width: 100%;
 }
 
@@ -591,11 +590,20 @@ hr {
 
 .total-div {
   margin-top: 30px;
+  margin-bottom: 200px;
 }
 
 .itog {
   text-transform: uppercase;
   text-align: right;
+}
+
+.total-div .but {
+  margin-left: -5px !important;
+}
+
+.but span {
+  color: black !important;
 }
 
 /* ₽ */
@@ -609,6 +617,9 @@ hr {
 @media (max-width: 768px) {
   .xs-visible {
     display: inline;
+  }
+  .xs-hidden {
+    display: none !important;
   }
 	.logo {
 		font-size: 200%;
@@ -637,8 +648,31 @@ hr {
     margin: 0 auto;
     width: 300px;
   }
-  .ab {
+  .dep img {
+    display: flex;
+  }
+  .ab, .dep img {
     margin: auto !important;
+  }
+  .price {
+    padding: 20px 0;
+  }
+  hr {
+    margin-top: 1% !important;
+    width: 100%;
+  }
+  .dep {
+    padding-bottom: 60px;
+  }
+  .somediv {
+    padding: 30px 0 !important;
+    text-align: center;
+  }
+  .itog, .total {
+    text-align: center;
+  }
+  .itog {
+    margin-top: 40px;
   }
 }
 

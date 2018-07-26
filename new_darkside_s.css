@@ -1,3 +1,11 @@
+body {
+  transition: .4s;
+}
+
+img {
+  transition: .4s;
+}
+
 a {
   outline: none !important;
 }
@@ -16,6 +24,7 @@ a {
   letter-spacing: 1px;
   position: relative;
   transition: 0.4s;
+  opacity: 0;
 }
 
 .up .nav-link:hover {
@@ -44,6 +53,7 @@ a {
 }
 
 .logo {
+  opacity: 0;
   position: relative;
   padding: 15px;
   font-size: 300%;
@@ -154,7 +164,7 @@ a {
 .card {
   color: white !important;
   transition: .3s;
-
+  opacity: 0;
   background-color: rgba(0,0,0, 0) !important;
   border: 2px solid gray !important;
   padding: 25px;
@@ -176,6 +186,7 @@ a {
 }
 
 .but {
+  opacity: 0;
   width: 100%;
   border-radius: 5px !important;
   margin: 0 !important;
@@ -359,7 +370,9 @@ h5 {
 }
 
 .page-footer {
-  padding-top: 0 !important;
+  position: static;
+  bottom: 0;
+  width: 100%;
   background-color: #212121;
 }
 
@@ -414,6 +427,7 @@ h5 {
 }
 
 .underlogo {
+  opacity: 0;
   font-size: 121.5%;
   margin-top: 30px !important;
   margin-bottom: -50px !important;
@@ -444,6 +458,11 @@ h5 {
 .darker h2 {
   text-transform: uppercase;
   color: #F5F5F5 !important;
+  opacity: 0;
+}
+
+.slick-arrow {
+  opacity: 0;
 }
 
 .about {
@@ -451,6 +470,42 @@ h5 {
   position: relative;
 }
 
+
+/* cart.html */
+
+.c-main {
+  height: 100vh;
+  background-color: #212121;
+  width: 100%;
+}
+
+.c-main .container {
+  margin: 0 auto !important;
+}
+
+.pos {
+  padding-top: 100px;
+}
+
+.pos h4 {
+  color: white;
+}
+
+.ro {
+  border-radius: 100% !important;
+  height: 50px !important;
+  width: 50px !important;
+  padding: 0 !important;
+}
+
+.dep {
+  margin-top: 50px;
+}
+
+.c-main img {
+  height: 200px;
+  width: auto;
+}
 
 /* ₽ */
 

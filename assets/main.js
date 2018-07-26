@@ -42,10 +42,24 @@ var waypoints = $('.main').waypoint(function(direction) {
 
 //anchor
 $(document).ready(function(){
-  $("body").on("click","a", function (event) {
+  $("a.anchor").click(function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
     top = $(id).offset().top;
     $('body,html').animate({scrollTop: top-70}, 1000);
+  });
+});
+
+//fade
+$(function(){
+  $('.underlogo').fadeTo('slow', 0.95, 'swing');
+  $('.logo').fadeTo('fast', 1, 'swing');
+  $('.nav-link').fadeTo('slow', 1, 'swing');
+  $('.card').fadeTo('slow', 1, 'swing');
+  $('.but').fadeTo('slow', 1, 'swing');
+  $('.darker h2').fadeTo('slow', 1, 'swing');
+  $('.slick-arrow').fadeTo(1500, 1, 'swing');
+  $('img').lazyload({
+    effect: 'show'
   });
 });

@@ -164,7 +164,7 @@ a {
 .card {
   color: white !important;
   transition: .3s;
-  opacity: 0;
+  opacity: 1;
   background-color: rgba(0,0,0, 0) !important;
   border: 2px solid gray !important;
   padding: 25px;
@@ -466,7 +466,7 @@ h5 {
 }
 
 .slick-arrow {
-  opacity: 0;
+  opacity: 1;
 }
 
 .about {
@@ -479,6 +479,12 @@ h5 {
 
 .fa-chevron-left {
   font-size: 80% !important;
+}
+
+.c-main .darker .heading {
+  padding: 0 !important;
+  margin: 0 !important;
+
 }
 
 .c-main {
@@ -630,9 +636,7 @@ hr {
   h2 {
     font-size: 160% !important;
   }
-  .dd {
-    margin: 0 !important;
-  }
+
   .lightgray {
     padding: 20px;
   }

@@ -273,6 +273,33 @@ a {
 }
 
 .cart {
+  position: relative;
+  transition: .4s
+}
+
+.card.changed {
+  transition: .4s;
+}
+
+.cart.changed:after {
+  text-align: center;
+  font-size: 80%;
+  content: '+1';
+  color: black;
+  padding: 5%;
+  transition: .4s;
+
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: 60px !important;
+  background-color: #FFA000;
+  width: 27px;
+  height: 30px;
+  visibility: visible;
+}
+
+.nav-cart {
   position: absolute;
   right: 0;
 }
@@ -306,6 +333,11 @@ h1 {
 
 .container {
   margin-top: 50px;
+}
+
+#but:disabled {
+  background-color: #FFA000 !important;
+  opacity: 0.5 !important;
 }
 
 .mt {
@@ -502,7 +534,7 @@ h5 {
   display: flex;
   vertical-align: middle;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .pos h4 {
@@ -539,7 +571,7 @@ h5 {
 }
 
 .dep {
-  margin-top: 50px;
+  margin-top: 30px;
   height: auto;
   width: 100%;
 }
@@ -548,14 +580,14 @@ h5 {
   color: lightgray;
 }
 
-.price, .dep h2 {
+.price, .dep h2, .dep h4 {
   color: white;
 }
 
 .c-main img {
   border-radius: 3px;
   border: 2px solid #373737;
-  height: 200px;
+  height: 180px;
   width: auto;
 }
 
@@ -583,6 +615,10 @@ hr {
 
 .somediv {
   margin: auto;
+}
+
+.somediv h3 {
+  color: white;
 }
 
 .total-div h2 {
@@ -669,7 +705,7 @@ hr {
     padding-bottom: 60px;
   }
   .somediv {
-    padding: 30px 0 !important;
+    padding-top: 15px !important;
     text-align: center;
   }
   .itog, .total {

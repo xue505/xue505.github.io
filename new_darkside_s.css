@@ -506,6 +506,17 @@ h5 {
   position: relative;
 }
 
+.flags {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  z-index: 9999;
+}
+
+.flags img {
+  width: 25px;
+}
+
 
 /* cart.html */
 
